@@ -68,4 +68,25 @@ return require('packer').startup(function(use)
   -- Autotag
   use('windwp/nvim-ts-autotag')
 
+  -- Neogit
+  use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
+
+  -- Nvim Dap
+  use { 'mfussenegger/nvim-dap' }
+
+  -- Nvim Dap UI
+  use { 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } }
+
+  -- Indent Blankline
+  use { 'lukas-reineke/indent-blankline.nvim' }
+
+  -- Feline Statusbar
+  use { 'feline-nvim/feline.nvim' }
+
+  -- GitSigns
+  use { 'lewis6991/gitsigns.nvim' }
+
+  -- Barbar
+  use { 'romgrk/barbar.nvim' }
+
 end)
