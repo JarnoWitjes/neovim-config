@@ -71,12 +71,6 @@ return require('packer').startup(function(use)
   -- Neogit
   use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 
-  -- Nvim Dap
-  use { 'mfussenegger/nvim-dap' }
-
-  -- Nvim Dap UI
-  use { 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } }
-
   -- Indent Blankline
   use { 'lukas-reineke/indent-blankline.nvim' }
 
