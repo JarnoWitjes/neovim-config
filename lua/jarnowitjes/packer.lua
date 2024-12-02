@@ -9,11 +9,10 @@ return require('packer').startup(function(use)
 
   -- Telescope (Fuzzy finder)
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
+      'nvim-telescope/telescope.nvim', tag = '0.1.8',
+      -- or                            , branch = '0.1.x',
+      requires = { {'nvim-lua/plenary.nvim'} }
   }
-
   -- Colorscheme
   use { "catppuccin/nvim", as = "catppuccin" }
   vim.cmd('colorscheme catppuccin')
@@ -79,8 +78,4 @@ return require('packer').startup(function(use)
 
   -- GitSigns
   use { 'lewis6991/gitsigns.nvim' }
-
-  -- Barbar
-  use { 'romgrk/barbar.nvim' }
-
 end)
